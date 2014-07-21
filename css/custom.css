@@ -1,4 +1,6 @@
-
+body {
+    display: block !important;
+}
 /* INTRO-SECTION CONTENT
 -------------------------------------------------- */
 .intro-section {
