@@ -3,7 +3,7 @@
 
 /* Padding below the footer and lighter body text */
 body {
-    padding: 40px 0;
+    padding: 0;
     color: #5a5a5a;
     display: block !important;
 }
@@ -23,9 +23,7 @@ a:hover {
     display: inline-block;
     float: left;
     min-width: 180px;
-    margin-right: 2em;
-}
-.col-lg-8{
+    margin: 1em 2em 1em 1em;
 }
 .img-circle {
     width: 180px;
@@ -53,6 +51,9 @@ a:hover {
 }
 .pickupline p {
     margin: 1em 5em 1em 1em;
+}
+.pickupline p:first-child {
+    margin-top: 3em;
 }
 .etat-civil {
     font-size: .8em;
@@ -180,7 +181,54 @@ span.lines {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
- @media (min-width: 768px) {
+ @media (max-width: 768px) {
+    /* Remove the edge padding needed for mobile */
+    .intro-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .col-lg-4 {
+        clear: both;
+        float: none;
+        margin: 0;
+    }
+    .pickupline {
+        text-align: center;
+    }
+    .pickupline p {
+        margin-right: 1.5em;
+    }
+    .etat-civil, .address {
+        padding: 0 1em;
+    }
+
+    .etat-civil p, .address p {
+        display: block;
+        padding: 0;
+        border: none;
+    }
+    h2 {
+        line-height: 54px;
+    }
+    section {
+        padding: 0 1em;
+    }
+    /* Navbar positioning foo */
+
+    .navbar-fixed-top {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0 !important;
+    }
+    .navbar-inner {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .navbar-inner h1 {
+        padding-left:1em !important;
+    }
+} 
+@media (min-width: 768px) {
     /* Remove the edge padding needed for mobile */
     .intro-section {
         padding-left: 0;
@@ -188,9 +236,17 @@ span.lines {
     }
     /* Navbar positioning foo */
 
-    nav .navbar {
+    .navbar-fixed-top {
         padding-left: 0;
         padding-right: 0;
+        margin-bottom: 0 !important;
+    }
+    .navbar-inner {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .navbar-inner h1 {
+        padding-left:1em !important;
     }
 }
 
