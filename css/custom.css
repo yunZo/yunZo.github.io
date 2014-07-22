@@ -198,14 +198,17 @@ span.lines {
     .pickupline p {
         margin-right: 1.5em;
     }
-    .etat-civil, .address {
+    .etat-civil {
         padding: 0 1em;
     }
-
+    .address {
+        padding: 0 1em 2em 1em;
+    }
     .etat-civil p, .address p {
         display: block;
         padding: 0;
         border: none;
+        margin-bottom: 0;
     }
     h2 {
         line-height: 54px;
