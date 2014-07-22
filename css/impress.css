@@ -249,7 +249,8 @@ a:focus {
 }
 
 #title h1 {
-    font-size: 190px;
+    font-size: 120px;
+    margin-bottom: 60px;
 
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
@@ -259,7 +260,7 @@ a:focus {
 }
 
 #title .smaller {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 #mission2 { width: 1200px }
