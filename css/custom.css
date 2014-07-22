@@ -22,9 +22,10 @@ a:hover {
     width: 20%;
     display: inline-block;
     float: left;
+    min-width: 180px;
+    margin-right: 2em;
 }
 .col-lg-8{
-    width: 80%;
     display: inline-block;
 }
 .img-circle {
