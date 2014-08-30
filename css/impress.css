@@ -265,6 +265,11 @@ a:focus {
 
 #mission2 { width: 1200px }
 
+#mission p .smaller {
+    font-size: 24px;
+}
+
+
 #mission2 b {
     display: inline-block;
     -webkit-transition: 0.9s;
